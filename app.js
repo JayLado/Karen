@@ -128,8 +128,8 @@
     heading.textContent = group.title;
     const list = document.createElement("ol");
     list.className = "entourage-list";
-    const names = group.names.slice(0, 21).map((name) => name.trim());
-    while (names.length < 21) names.push(config.openNamePlaceholder);
+    const names = group.names.slice(0, 18).map((name) => name.trim());
+    while (names.length < 18) names.push(config.openNamePlaceholder);
     names.forEach((name, index) => {
       const item = document.createElement("li");
       item.innerHTML = `<span class="entourage-number">${String(index + 1).padStart(2, "0")}</span><span class="entourage-name"></span><span class="entourage-rose" aria-hidden="true">✦</span>`;

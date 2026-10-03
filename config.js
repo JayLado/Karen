@@ -27,7 +27,7 @@ window.INVITATION_CONFIG = {
   openNamePlaceholder: "Name to be announced",
   entourageGroups: [
     {
-      title: "21 Blue Bills",
+      title: "18 Blue Bills",
       names: [
         "Jocelyn Endo", "Monaliza Jimena", "Dollores Rouca", "Josephine Van Der Meer",
         "Joyce Obeña", "Myra Reyes", "Madel Reyes", "Girly Tan", "Lorna Albarez",
@@ -36,7 +36,7 @@ window.INVITATION_CONFIG = {
       ]
     },
     {
-      title: "21 Roses",
+      title: "18 Roses",
       names: [
         "Winston Rea", "Rafael Javal", "Joshua Salanda", "Noah Jimena", "Wincy Lado",
         "Karl Millares", "Asher Pactor", "Jhay Jimena", "Sebastian Obeña", "William Borbe",
@@ -45,7 +45,7 @@ window.INVITATION_CONFIG = {
       ]
     },
     {
-      title: "21 Shot+Candle",
+      title: "18 Shot+Candle",
       names: [
         "Marge Millares", "Valarie Cortez", "Samantha Millares", "Jamjam Millares",
         "Gwyneth Lado", "Camille Jimena", "Sofie Meranda", "Jinky Quinto", "Marian Rea",
@@ -54,7 +54,7 @@ window.INVITATION_CONFIG = {
       ]
     },
     {
-      title: "21 Gifts",
+      title: "18 Gifts",
       names: [
         "Jean Manila", "Nicka Santiago", "Lester Bojelador", "Ximon Recelis", "Lance Deodores",
         "Evelyn Millares", "Clency Lado", "Pst Nora Naynes", "Lagring Quintero", "Anna Mejico",
