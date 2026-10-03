@@ -22,7 +22,7 @@ window.INVITATION_CONFIG = {
     "assets/IMG_0332.jpg",
     "assets/IMG_0333.jpg"
   ],
-  musicFile: "",
+  musicFile: "assets/bg_music.mp3",
   rsvpEndpoint: "",
   openNamePlaceholder: "Name to be announced",
   entourageGroups: [

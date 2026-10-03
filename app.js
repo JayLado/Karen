@@ -185,25 +185,41 @@
   const music = document.querySelector("[data-music]");
   const musicToggle = document.querySelector(".music-toggle");
   if (config.musicFile) music.src = config.musicFile;
-  musicToggle.addEventListener("click", async () => {
-    if (!config.musicFile) {
-      musicToggle.querySelector(".music-label").textContent = "Add music in config";
-      return;
+  const updateMusicToggle = (isPlaying) => {
+    musicToggle.setAttribute("aria-pressed", String(isPlaying));
+    musicToggle.setAttribute("aria-label", isPlaying ? "Pause background music" : "Play background music");
+    musicToggle.querySelector(".music-label").textContent = isPlaying ? "Sound on" : "Sound off";
+  };
+  const startMusic = async () => {
+    if (!config.musicFile || !music.paused) return;
+    try {
+      await music.play();
+      updateMusicToggle(true);
+    } catch {
+      updateMusicToggle(false);
     }
+  };
+  const retryMusicAfterInteraction = (event) => {
+    if (event.target.closest?.(".music-toggle")) return;
+    document.removeEventListener("pointerdown", retryMusicAfterInteraction);
+    document.removeEventListener("keydown", retryMusicAfterInteraction);
+    startMusic();
+  };
+  if (config.musicFile) {
+    music.preload = "auto";
+    startMusic();
+    document.addEventListener("pointerdown", retryMusicAfterInteraction);
+    document.addEventListener("keydown", retryMusicAfterInteraction);
+  }
+  musicToggle.addEventListener("click", async () => {
+    if (!config.musicFile) return;
+    document.removeEventListener("pointerdown", retryMusicAfterInteraction);
+    document.removeEventListener("keydown", retryMusicAfterInteraction);
     if (music.paused) {
-      try {
-        await music.play();
-        musicToggle.setAttribute("aria-pressed", "true");
-        musicToggle.setAttribute("aria-label", "Pause background music");
-        musicToggle.querySelector(".music-label").textContent = "Sound on";
-      } catch {
-        musicToggle.querySelector(".music-label").textContent = "Music unavailable";
-      }
+      await startMusic();
     } else {
       music.pause();
-      musicToggle.setAttribute("aria-pressed", "false");
-      musicToggle.setAttribute("aria-label", "Play background music");
-      musicToggle.querySelector(".music-label").textContent = "Sound off";
+      updateMusicToggle(false);
     }
   });
 
