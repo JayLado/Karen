@@ -13,7 +13,7 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 82px; }
+html { overflow-x: clip; scroll-behavior: smooth; scroll-padding-top: 82px; }
 body { margin: 0; overflow-x: hidden; color: var(--ivory); background: radial-gradient(ellipse at 82% 14%, rgba(140, 0, 12, .2), transparent 37%), radial-gradient(ellipse at 50% 58%, rgba(73, 2, 10, .13), transparent 52%), var(--black); font-family: var(--serif); font-size: 17px; }
 ::selection { color: var(--black); background: var(--gold); }
 a { color: inherit; text-decoration: none; }
@@ -64,5 +64,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .countdown, .event-details, .location-section, .attire-section, .entourage-section, .rsvp-section { padding-block: 74px; }.section-title { font-size: 44px; }.countdown-grid { grid-template-columns: repeat(4, minmax(54px, 74px)); gap: 8px; margin-top: 29px; }.time-box strong { font-size: 30px; }.time-box span { font-size: 7px; letter-spacing: 1px; }
   .carousel-stage { height: 420px; perspective: 950px; }.carousel-slide { width: min(66vw, 260px); }.carousel-controls { gap: 18px; }.location-layout { grid-template-columns: 1fr; gap: 27px; }.location-copy { padding-left: 19px; }.event-schedule { gap: 20px; }.map-frame, .map-frame iframe { min-height: 250px; height: 250px; }.attire-intro { font-size: 17px; }.attire-guidance { display: grid; justify-content: center; gap: 14px; text-align: left; }.entourage-groups { grid-template-columns: 1fr; gap: 30px; margin-top: 34px; }.entourage-list { gap: 0 12px; }.entourage-list li { min-height: 46px; }.entourage-name { font-size: 15px; }.rsvp-section { width: calc(100% - 48px); }.rsvp-form { grid-template-columns: 1fr; gap: 15px; }.message-label, .submit-button { grid-column: auto; }.rsvp-rose { right: -48px; top: 1px; width: 55px; }.site-footer { padding-bottom: 54px; }
 }
+@media (max-width: 760px) { .rsvp-rose { right: -35px; } }
 @media (max-width: 390px) { .section-shell { width: calc(100% - 40px); }.rsvp-section { width: calc(100% - 40px); }.music-label { display: none; }.entourage-list { grid-template-columns: 1fr; }.hero-copy { padding-bottom: 132px; }.hero h1 { font-size: 89px; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }.reveal { opacity: 1; transform: none; } }
