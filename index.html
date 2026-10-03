@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#090303" />
+    <meta name="description" content="An evening of roses, music, and celebration. Join Jemina Karen Lado for her debut." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The Debut of Jemina Karen Lado" />
+    <meta property="og:description" content="October 31, 2026 · Cerca Del Rio Pavillion and Restaurant" />
+    <meta property="og:image" content="assets/invitation-portrait.jpg" />
+    <title>The Debut of Jemina Karen Lado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="config.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="frame" aria-hidden="true"></div>
+    <div class="petal-field" aria-hidden="true"></div>
+    <header class="site-header">
+      <button class="music-toggle" type="button" aria-pressed="false" aria-label="Play background music"><span class="music-bars"><i></i><i></i><i></i></span><span class="music-label">Sound off</span></button>
+    </header>
+
+    <main>
+      <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-portrait" aria-hidden="true">
+          <div class="portrait-fallback"><span class="fallback-head"></span><span class="fallback-body"></span><span class="fallback-gown"></span></div>
+          <img class="portrait-image" alt="Jemina Karen Lado in a ruby red satin gown" />
+          <div class="portrait-shade"></div>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow" data-content="invitationLine">You are invited to</p>
+          <div class="the-line"><span class="flourish flourish-left" aria-hidden="true">❧</span><span>The</span><span class="flourish flourish-right" aria-hidden="true">❧</span></div>
+          <h1 id="hero-title">Debut</h1>
+          <p class="of-line">of</p>
+          <p class="celebrant-name" data-hero-name>Jemina Karen<br />Lado</p>
+          <div class="gem-divider" aria-hidden="true"><span></span><i>◆</i><span></span></div>
+        </div>
+        <div class="rose rose-hero rose-one" aria-hidden="true"></div><div class="rose rose-hero rose-two" aria-hidden="true"></div>
+      </section>
+
+      <section class="countdown section-shell reveal" id="countdown" aria-labelledby="countdown-title">
+        <p class="section-kicker">An evening to remember</p><h2 class="section-title" id="countdown-title">Until the <em>night</em></h2>
+        <div class="countdown-grid" aria-label="Time remaining until the celebration">
+          <div class="time-box"><strong data-time="days">00</strong><span>Days</span></div><div class="time-box"><strong data-time="hours">00</strong><span>Hours</span></div><div class="time-box"><strong data-time="minutes">00</strong><span>Minutes</span></div><div class="time-box"><strong data-time="seconds">00</strong><span>Seconds</span></div>
+        </div>
+        <p class="countdown-note" data-countdown-note></p>
+      </section>
+
+      <section class="event-details section-shell reveal" id="details" aria-labelledby="details-title">
+        <div class="section-heading"><p class="section-kicker">The guest of honor</p><h2 class="section-title" id="details-title">Jemina's <em>portraits</em></h2></div>
+        <div class="portrait-carousel" data-carousel>
+          <div class="carousel-stage" data-carousel-stage tabindex="0" role="region" aria-label="Portrait carousel" aria-roledescription="carousel">
+            <div class="carousel-ring" data-carousel-ring></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="location-section section-shell reveal" id="location" aria-labelledby="location-title">
+        <div class="section-heading"><p class="section-kicker">Meet us by the river</p><h2 class="section-title" id="location-title">The <em>place</em></h2></div>
+        <div class="location-layout">
+          <div class="location-copy"><span class="mini-rose" aria-hidden="true">✿</span><p class="location-name" data-content="venueName">Cerca Del Rio</p><p class="location-address" data-content="venueAddress">Pavillion and Restaurant</p><div class="event-schedule" aria-label="Celebration date and time"><div><span>Date</span><time data-content="dateText" datetime="2026-10-31">October 31, 2026</time></div><div><span>Time</span><strong data-content="timeText">3:00 PM</strong></div></div><p class="location-note">We look forward to welcoming you for a beautiful evening.</p><div class="location-actions"><a class="outline-button" data-link="mapsLink" target="_blank" rel="noreferrer">View on Google Maps <span aria-hidden="true">↗</span></a><a class="text-button" data-link="directionsLink" target="_blank" rel="noreferrer">Get directions <span aria-hidden="true">→</span></a></div></div>
+          <div class="map-frame"><iframe title="Map showing the celebration venue" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><div class="map-label"><span class="map-pin">⌖</span><span data-content="venueName">Cerca Del Rio</span></div></div>
+        </div>
+      </section>
+
+      <section class="attire-section section-shell reveal" id="attire" aria-labelledby="attire-title">
+        <div class="attire-ornament" aria-hidden="true">✧</div><p class="section-kicker">A note on attire</p><h2 class="section-title attire-title" id="attire-title">Formal <em>black</em> attire</h2>
+        <p class="attire-intro">Join us dressed in your most elegant formal black. A little shimmer is always welcome.</p>
+        <div class="palette" aria-label="Suggested colors"><span class="swatch swatch-black" title="Black"></span><span class="swatch swatch-ruby" title="Ruby accent"></span><span class="swatch swatch-gold" title="Champagne gold"></span></div>
+        <div class="attire-guidance"><div><span class="guidance-mark">+</span><p>Formal evening wear</p></div><div><span class="guidance-mark">+</span><p>Black is the evening's color</p></div><div><span class="guidance-mark">−</span><p>Red is reserved for the celebrant</p></div></div>
+        <p class="attire-footnote">Thank you for helping make her night shine.</p>
+      </section>
+
+      <section class="entourage-section section-shell reveal" id="entourage" aria-labelledby="entourage-title">
+        <div class="section-heading"><p class="section-kicker">By her side</p><h2 class="section-title" id="entourage-title">The <em>entourage</em></h2><p class="script-subtitle">With love, on this special night</p></div>
+        <div class="entourage-groups" data-entourage-groups></div>
+      </section>
+
+      <section class="rsvp-section section-shell reveal" id="rsvp" aria-labelledby="rsvp-title">
+        <div class="rsvp-rose rose rose-rsvp" aria-hidden="true"></div><p class="section-kicker">Kindly reply by <span data-content="rsvpDeadline">October 1, 2026</span></p><h2 class="section-title" id="rsvp-title">Will you <em>join us?</em></h2>
+        <p class="rsvp-intro">Your presence would mean the world to us.</p>
+        <form class="rsvp-form" data-rsvp-form>
+          <label>Full name<input name="name" autocomplete="name" required placeholder="Your name" /></label>
+          <label>Email or phone<input name="contact" autocomplete="email" required placeholder="How may we reach you?" /></label>
+          <label>Will you be attending?<select name="attendance" required><option value="" disabled selected>Please select</option><option value="accept">Yes, I will attend</option><option value="decline">No, I won't be available to attend</option></select></label>
+          <label>Number of guests<select name="guests"><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+          <label class="message-label">A message for Jemina<textarea name="message" rows="3" placeholder="Leave a little note..."></textarea></label>
+          <button class="submit-button" type="submit"><span>Send your reply</span><span aria-hidden="true">↗</span></button>
+        </form>
+        <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell"><div class="footer-flourish" aria-hidden="true"><span></span><i>✦</i><span></span></div><p class="footer-name" data-content="celebrantName">Jemina Karen Lado</p><p class="footer-event">The Debut <span>·</span> <span data-content="dateText">October 31, 2026</span></p><p class="footer-hashtag" data-content="hashtag">#JeminasRubyNight</p></footer>
+    <audio data-music preload="none" loop></audio>
+  </body>
+</html>
