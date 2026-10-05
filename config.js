@@ -23,7 +23,7 @@ window.INVITATION_CONFIG = {
     "assets/IMG_0333.jpg"
   ],
   musicFile: "assets/bg_music.mp3",
-  rsvpEndpoint: "https://script.google.com/macros/s/AKfycbzzsOWbHHPVpE-buCEUPcWRsMM9tj06xj1rTKxkwklxDZUkIj1SuLKrl6l8pBNX0-yo/exec",
+  rsvpEndpoint: "/api/rsvp",
   openNamePlaceholder: "Name to be announced",
   entourageGroups: [
     {
