@@ -27,39 +27,41 @@ window.INVITATION_CONFIG = {
   openNamePlaceholder: "Name to be announced",
   entourageGroups: [
     {
-      title: "18 Blue Bills",
-      names: [
-        "Jocelyn Endo", "Monaliza Jimena", "Dollores Rouca", "Josephine Van Der Meer",
-        "Joyce Obeña", "Myra Reyes", "Madel Reyes", "Girly Tan", "Lorna Albarez",
-        "Vangie Papa", "Amy Villanueva", "Egay Lado", "Mayor Piwa Lim", "Vc M Manny Maraig",
-        "Sherwin Quesea", "Jerry Cabriga", "Pablito Averilla", "Renato Jacela"
-      ]
-    },
-    {
       title: "18 Roses",
       names: [
         "Winston Rea", "Rafael Javal", "Joshua Salanda", "Noah Jimena", "Wincy Lado",
         "Karl Millares", "Asher Pactor", "Jhay Jimena", "Sebastian Obeña", "William Borbe",
-        "Laurence Averilla", "Christian Gonzales", "Sherwin Lado", "Celeb Lado", "Rj Lado",
-        "Romeo Millares", "lolo Fred Lado", "Daddy Boyet Lado"
+        "Laurence Averilla", "Christian Gonzales", "Sherwin Lado", "Romeo Millares", "Caleb Lado",
+        "Rj Lado", "Lolo Fred Lado", "Daddy Boyet Lado"
       ]
     },
     {
       title: "18 Shot+Candle",
       names: [
         "Marge Millares", "Valarie Cortez", "Samantha Millares", "Jamjam Millares",
-        "Gwyneth Lado", "Camille Jimena", "Sofie Meranda", "Jinky Quinto", "Marian Rea",
-        "Jaymarie Pialago", "Julius Naynes", "Lerick Abuel", "Shane Panllio", "Kryzel Ramizares",
-        "Joybell Lado", "Juries Rivera", "Mica Millares", "Alliah Millares"
+        "Gwyneth Lado", "Camille Jimena", "Sofie Lacanlale", "Jinky Quinto", "Marian Rea",
+        "Jaymarie Pialago", "Shane Panllio", "Kryzel Ramizares", "Mica Millares", "Alliah Millares",
+        "Naring Lado", "Joybell Lado", "Jean Kathyrine", "Joanna Lado"
       ]
     },
     {
       title: "18 Gifts",
       names: [
-        "Jean Manila", "Nicka Santiago", "Lester Bojelador", "Ximon Recelis", "Lance Deodores",
-        "Evelyn Millares", "Clency Lado", "Pst Nora Naynes", "Lagring Quintero", "Anna Mejico",
-        "Joshua Averilla", "Madel Millares", "Lyka Gaela", "Charmain Gonzales", "Using David",
-        "Bernardo Millares", "Marites Villegas", "Nora Millares"
+        "Jean Manila", "Nicka Santiago", "Lester Bojelador", "Ximon Recelis", "Lerick Abuel",
+        "Juluis Naynes", "Tita Evelyn Millares", "Ate Clency Lado", "Pst Nora Naynes",
+        "Tita Lagring Quintero", "Tita Anna Mejico", "Joshua Averilla", "Tita Mabel Millares",
+        "Ate Charmain Gonzales", "Tita Using David", "Tito Bernard Millares", "Tita Marites Villegas",
+        "Tita Nora Millares"
+      ]
+    },
+    {
+      title: "18 Blue Bills",
+      names: [
+        "Honor. Mayor Anthony Piwa Lim", "Coun. Manny Maraig", "Ninang Jocelyn Endo",
+        "Ninang Monaliza Jimena", "Ninang Dollores Rueca", "Tita Josephine Van Der Meer",
+        "Ninang Joyce Obeña", "Ninang Myra Oabel", "Ninang Madel Reyes", "Ninang Girlie Tan",
+        "Ninang Lorna Albarez", "Ninang Vangie Papa", "Ninang Amy Villanueva", "Ninang Egay Lado",
+        "Ninong Sherwin Quesea", "Ninong Jerry Cabriga", "Ninong Pablito Averilla", "Ninong Renato Jacela"
       ]
     }
   ]
