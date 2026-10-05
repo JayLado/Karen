@@ -23,13 +23,13 @@ window.INVITATION_CONFIG = {
     "assets/IMG_0333.jpg"
   ],
   musicFile: "assets/bg_music.mp3",
-  rsvpEndpoint: "https://script.google.com/macros/s/AKfycbzYSf7QH96OwqGtO61lbDGaj1iZKuIWWbAEiEjEUGN_acQY4btPMBIXWChl8xQpyqKq/exec",
+  rsvpEndpoint: "https://script.google.com/macros/s/AKfycbzzsOWbHHPVpE-buCEUPcWRsMM9tj06xj1rTKxkwklxDZUkIj1SuLKrl6l8pBNX0-yo/exec",
   openNamePlaceholder: "Name to be announced",
   entourageGroups: [
     {
       title: "18 Roses",
       names: [
-        "Winston Rea", "Rafael Javal", "Joshua Salanda", "Noah Jimena", "Wincy Lado",
+        "Winston Rea", "Rafael Javal", "Joshua Salanda", "Noah Jimena", "Wincy Lado", 
         "Karl Millares", "Asher Pactor", "Jhay Jimena", "Sebastian Obeña", "William Borbe",
         "Laurence Averilla", "Christian Gonzales", "Sherwin Lado", "Romeo Millares", "Caleb Lado",
         "Rj Lado", "Lolo Fred Lado", "Daddy Boyet Lado"
