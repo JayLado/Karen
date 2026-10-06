@@ -50,7 +50,7 @@ window.INVITATION_CONFIG = {
       title: "18 Gifts",
       names: [
         "Jean Manila", "Nicka Santiago", "Lester Bojelador", "Ximon Recelis", 
-        "Lerick Abuel", "Julius Naynes", "Tita Evelyn Millares", "Tita Using David", 
+        "Lerick Abuel", "Julius Naynes", "Tita Evelyn Millares", "Joybelle Lado", 
         "Tito Bernard Millares", "Tita Marites Villegas", "Tita Nora Millares", "Tita Clency Lado", 
         "Sebastian Obeña", "Tita Mabel Millares", "Pst Nora Naynes", "Lagring Quintero", 
         "Anna Mejico", "Ate Charmain Gonzales"
