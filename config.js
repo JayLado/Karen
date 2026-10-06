@@ -53,7 +53,7 @@ window.INVITATION_CONFIG = {
         "Lerick Abuel", "Julius Naynes", "Tita Evelyn Millares", "Joybelle Lado", 
         "Tito Bernard Millares", "Tita Marites Villegas", "Tita Nora Millares", "Tita Clency Lado", 
         "Sebastian Obeña", "Tita Mabel Millares", "Pst Nora Naynes", "Lagring Quintero", 
-        "Anna Mejico", "Ate Charmain Gonzales"
+        "Anna Mejico", "Charmaine Gonzales"
       ]
     },
     {
