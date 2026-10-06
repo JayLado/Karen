@@ -41,7 +41,7 @@ window.INVITATION_CONFIG = {
       names: [
         "Jinky Quinto", "Marian Rea", "Jaymarie Pialago", "Shane Panllio", 
         "Kryzel Ramizares", "Margaret Millares", "Valarie Cortez", "Samantha Millares", 
-        "Jamjam Millares", "Gwyneth Lado", "Juries Rivera", "Camille Jimena", 
+        "Jamjam Millares", "Gwyneth Lado", "Juries Rivera",  "Joybelle Lado", 
         "Sofia Lacanlale", "Mica Millares", "Alliah Millares", "Naring Lado", 
         "Jean Kathyrine", "Mommy Joanna Lado"
       ]
@@ -50,10 +50,10 @@ window.INVITATION_CONFIG = {
       title: "18 Gifts",
       names: [
         "Jean Manila", "Nicka Santiago", "Lester Bojelador", "Ximon Recelis", 
-        "Lerick Abuel", "Julius Naynes", "Tita Evelyn Millares", "Joybelle Lado", 
+        "Lerick Abuel", "Julius Naynes", "Tita Evelyn Millares",
         "Tito Bernard Millares", "Tita Marites Villegas", "Tita Nora Millares", "Tita Clency Lado", 
         "Sebastian Obeña", "Tita Mabel Millares", "Pst Nora Naynes", "Lagring Quintero", 
-        "Anna Mejico", "Charmaine Gonzales"
+        "Anna Mejico", "Camille Jimena", "Charmaine Gonzales"
       ]
     },
     {

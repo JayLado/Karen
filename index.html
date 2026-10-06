@@ -93,6 +93,14 @@
           <button class="submit-button" type="submit"><span>Send your reply</span><span aria-hidden="true">↗</span></button>
         </form>
         <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+        <dialog class="rsvp-dialog" data-rsvp-dialog aria-labelledby="rsvp-dialog-title" aria-describedby="rsvp-dialog-message">
+          <div class="rsvp-dialog-content">
+            <p class="section-kicker">Kindly reply</p>
+            <h2 class="section-title" id="rsvp-dialog-title" data-rsvp-dialog-title>Sending your reply</h2>
+            <p class="rsvp-dialog-message" id="rsvp-dialog-message" data-rsvp-dialog-message role="status" aria-live="polite">Please wait while we send your RSVP.</p>
+            <button class="submit-button rsvp-dialog-close" data-rsvp-dialog-close type="button" hidden>Close</button>
+          </div>
+        </dialog>
       </section>
     </main>
 

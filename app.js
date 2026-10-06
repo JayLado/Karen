@@ -225,11 +225,27 @@
 
   const form = document.querySelector("[data-rsvp-form]");
   const status = document.querySelector("[data-form-status]");
+  const rsvpDialog = document.querySelector("[data-rsvp-dialog]");
+  const dialogTitle = document.querySelector("[data-rsvp-dialog-title]");
+  const dialogMessage = document.querySelector("[data-rsvp-dialog-message]");
+  const dialogClose = document.querySelector("[data-rsvp-dialog-close]");
+  let isSubmitting = false;
+
+  dialogClose.addEventListener("click", () => rsvpDialog.close());
+  rsvpDialog.addEventListener("cancel", (event) => {
+    if (isSubmitting) event.preventDefault();
+  });
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
+    if (isSubmitting) return;
+    isSubmitting = true;
     const submitButton = form.querySelector(".submit-button");
     submitButton.disabled = true;
     status.textContent = "";
+    dialogTitle.textContent = "Sending your reply";
+    dialogMessage.textContent = "Please wait while we send your RSVP.";
+    dialogClose.hidden = true;
+    rsvpDialog.showModal();
     const formData = Object.fromEntries(new FormData(form).entries());
     try {
       if (config.rsvpEndpoint) {
@@ -239,13 +255,23 @@
           body: JSON.stringify(formData)
         });
         if (!response.ok) throw new Error("RSVP could not be sent.");
+        status.textContent = "Thank you. Your reply has been received.";
+        dialogTitle.textContent = "Reply sent successfully";
+        dialogMessage.textContent = "Thank you. Your reply has been received.";
+        form.reset();
+      } else {
+        status.textContent = "Your reply was not sent. Add your RSVP endpoint in config.js to receive responses.";
+        dialogTitle.textContent = "Reply not sent";
+        dialogMessage.textContent = "The RSVP service is not configured yet. Please contact the host to confirm your reply.";
       }
-      status.textContent = config.rsvpEndpoint ? "Thank you. Your reply has been received." : "Thank you for your reply. Add your RSVP endpoint in config.js to receive responses.";
-      form.reset();
     } catch {
       status.textContent = "We couldn't send your reply just now. Please try again or contact the host.";
+      dialogTitle.textContent = "Couldn't send your reply";
+      dialogMessage.textContent = "Please try again, or contact the host if the problem continues.";
     } finally {
+      isSubmitting = false;
       submitButton.disabled = false;
+      dialogClose.hidden = false;
     }
   });
 })();

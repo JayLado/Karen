@@ -68,3 +68,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
 @media (max-width: 760px) { .rsvp-rose { right: -35px; }.countdown { margin-block: 14px; padding: 18px 12px; border: 1px solid rgba(232, 201, 155, .38); background: linear-gradient(145deg, rgba(37, 8, 10, .56), rgba(12, 4, 5, .36)); }.countdown .section-kicker { font-size: 8px; letter-spacing: 1.5px; }.countdown .section-title { margin-top: 5px; font-size: 34px; }.countdown-grid { grid-template-columns: repeat(4, minmax(0, 64px)); gap: 6px; margin-top: 16px; }.time-box { aspect-ratio: 1.25; }.time-box strong { font-size: 26px; }.time-box span { font-size: 6px; letter-spacing: 1px; }.countdown-note { min-height: 16px; margin-top: 8px; font-size: 22px; } }
 @media (max-width: 390px) { .section-shell { width: calc(100% - 40px); }.rsvp-section { width: calc(100% - 40px); }.music-label { display: none; }.entourage-list { grid-template-columns: 1fr; }.hero-copy { padding-bottom: 132px; transform: translateY(18px); }.hero h1 { font-size: 89px; } .hero-portrait { left: -6%; right: -4%; } .portrait-image { object-position: 22% 32%; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }.reveal { opacity: 1; transform: none; } }
+
+.rsvp-dialog { width: min(440px, calc(100% - 36px)); max-width: none; padding: 38px 32px 30px; border: 1px solid var(--gold); color: var(--ivory); background: radial-gradient(ellipse at 50% 0, rgba(189, 7, 23, .28), transparent 70%), var(--velvet); text-align: center; }
+.rsvp-dialog::backdrop { background: rgba(5, 2, 2, .82); backdrop-filter: blur(4px); }
+.rsvp-dialog-content .section-kicker { margin: 0 0 12px; }
+.rsvp-dialog-content .section-title { margin: 0; font-size: 36px; }
+.rsvp-dialog-message { margin: 14px 0 0; color: var(--muted); font-size: 18px; }
+.rsvp-dialog-close { width: 100%; margin-top: 25px; }
+.rsvp-dialog-close[hidden] { display: none; }
+@media (max-width: 420px) { .rsvp-dialog { padding: 30px 22px 24px; }.rsvp-dialog-content .section-title { font-size: 31px; } }
