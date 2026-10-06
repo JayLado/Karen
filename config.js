@@ -11,7 +11,7 @@ window.INVITATION_CONFIG = {
   mapsLink: "https://www.google.com/maps/search/?api=1&query=Cerca+Del+Rio+Pavillion+and+Restaurant",
   directionsLink: "https://www.google.com/maps/dir/?api=1&destination=Cerca+Del+Rio+Pavillion+and+Restaurant",
   dressCode: "Formal black attire",
-  rsvpDeadline: "October 1, 2026",
+  rsvpDeadline: "October 12, 2026",
   hashtag: "#JeminasRubyNight",
   portraitImage: "assets/invitation-portrait.jpg",
   galleryImages: [
